@@ -1,6 +1,6 @@
 class PrototypesController < ApplicationController
   
-  before_action :authenticate_user!, except: [:new, :edit, :delete] 
+  before_action :authenticate_user!, except: [:index, :new, :edit, :delete] 
   before_action :move_to_edit, only: [:edit]
 
   def index
